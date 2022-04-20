@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 50%;
+        }
+        
+        tr, td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        div.fixed
+        {
+            position: fixed;
+            top: 0;
+            right: 300px;
+            width: 300px;
+            font-size: 30px;
+        }
+        </style>
+    <body>
+        <table>
+            <tr> BUYING</tr>
+            <tr>
+                <th> Price</th>
+                <th> Quantity</th>
+            </tr>
+        </table>
+        <table id="BUYING"></table>
+        <p></p>
+        <table>
+            <tr> SELLING</tr>
+            <tr>
+                <th> Price</th>
+                <th> Quantity</th>
+            </tr>
+        </table>
+        <table id="SELLING"></table>
+        <div class="fixed">
+            <div id="AuctionPrice" > AcutionPrice : </div>
+            <div id="AuctionQuantity"> AcutionQuantity : </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

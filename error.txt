@@ -1,0 +1,22 @@
+Marcelos-MacBook-Air:nodejs1 marcelo$ node index.js
+connectBid
+connectOffer
+ONOPEN
+Bid Array Received
+{"m":1,"i":2,"n":"SubscribeLevel2","o":"[[1,2,1650373848220,0,0,2,30,16,1.05,0],[2,1,1650373848220,0,0,1,29,16,1,0],[3,1,1650373848220,0,0,1,28,16,10,0],[4,1,1650373848220,0,0,1,25,16,2,0],[5,2,1650373848220,0,0,2,24,16,1.0,0],[6,3,1650373848220,0,0,5,23.5,16,13.8909,0],[7,1,1650373848220,0,0,1,23,16,5,0],[8,1,1650373848220,0,0,1,22,16,20,0],[9,1,1650373848220,0,0,1,21,16,10,0],[10,1,1650373848220,0,0,1,20,16,10,0],[11,1,1650373848220,0,0,1,17,16,0.05,0],[12,1,1650373848220,0,0,1,15,16,0.2,0],[13,1,1650373848220,0,0,1,13,16,0.1573,0]]"}
+/Users/marcelo/Documents/nodejs1/index.js:58
+        document.getElementById("BUYING").innerHTML = "";
+        ^
+
+ReferenceError: document is not defined
+    at WebSocket.connectionBid.onmessage (/Users/marcelo/Documents/nodejs1/index.js:58:9)
+    at WebSocket.onMessage (/Users/marcelo/Documents/nodejs1/node_modules/ws/lib/EventTarget.js:99:16)
+    at WebSocket.emit (events.js:311:20)
+    at Receiver._receiver.onmessage (/Users/marcelo/Documents/nodejs1/node_modules/ws/lib/WebSocket.js:141:47)
+    at Receiver.dataMessage (/Users/marcelo/Documents/nodejs1/node_modules/ws/lib/Receiver.js:389:14)
+    at Receiver.getData (/Users/marcelo/Documents/nodejs1/node_modules/ws/lib/Receiver.js:330:12)
+    at Receiver.startLoop (/Users/marcelo/Documents/nodejs1/node_modules/ws/lib/Receiver.js:165:16)
+    at Receiver.add (/Users/marcelo/Documents/nodejs1/node_modules/ws/lib/Receiver.js:139:10)
+    at TLSSocket.<anonymous> (/Users/marcelo/Documents/nodejs1/node_modules/ws/lib/WebSocket.js:138:22)
+    at TLSSocket.emit (events.js:311:20)
+Marcelos-MacBook-Air:nodejs1 marcelo$ 
